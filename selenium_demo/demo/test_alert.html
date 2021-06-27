@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script type="text/javascript">
+    function display_alert()
+    {
+       alert("这是一个提示框")
+    }
+
+    function disp_confirm()
+    {
+       var r=confirm("真的要删除数据吗?")
+     }
+
+    function disp_prompt()
+      {
+          var name=prompt("Please enter your name","")
+          if (name!=null && name!="")
+          {
+              document.write("Hello " + name + "!")
+          }
+      }
+
+    </script>
+</head>
+<body>
+
+<a herf="#" onclick="alert()" id="alert">Alert</a><br>
+<a herf="#" ) onclick="disp_confirm()" id="confirm">Confirm</a><br>
+<a herf="#" ) onclick="disp_prompt()" id="prompt">Prompt</a><br>
+
+<!--<a herf="#" onclick="javascript:alert('提示框')" id="alert">Alert</a><br>-->
+<!--<a herf="#" onclick="javascript:alert('真的要删除数据吗?')" id="confirm">Confirm</a><br>-->
+<!--<a herf="#" onclick="disp_prompt()" id="prompt">Prompt</a><br>-->
+<!--<a herf="javascript:confirm('真的要删除数据吗?'" ) id="confirm">Confirm</a><br>-->
+<!--<a herf="javascript:var age = prompt('请输入年龄');document.write(age)" ) id="prompt">Prompt</a><br>-->
+
+</body>
+</html>
